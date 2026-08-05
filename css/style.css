@@ -747,7 +747,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @keyframes badgeSpin { to { transform: rotate(360deg); } }
 
 .badge-lg { width: clamp(112px, 11vw, 168px); height: clamp(112px, 11vw, 168px); }
-.badge-lg text { fill: #fff; font-size: 6.6px; }
+.badge-lg text { fill: #fff; font-size: 8.6px; letter-spacing: normal; }
 .badge-center {
   position: absolute;
   inset: 24%;
