@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SimpleWebs — Website Design &amp; Development | Calgary</title>
+<meta name="description" content="SimpleWebs is a Calgary web agency crafting websites, storefronts and brands for businesses ready to grow.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════ LOADER ══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader-word">SimpleWebs</span>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="wordmark" href="#top" aria-label="SimpleWebs home">SimpleWebs</a>
+  <nav class="nav-menu" aria-label="Primary">
+    <a href="#stats" class="nav-link active">About</a>
+    <a href="#work" class="nav-link">Works</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+    <a href="nonprofit.html" class="nav-link">Non-Profits</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button class="pill pill-menu" id="menuBtn" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <svg class="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════ FULLSCREEN MENU OVERLAY ══════════ -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Main menu" hidden>
+  <button class="pill pill-close" id="menuClose" aria-label="Close menu">
+    <svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+    </svg>
+  </button>
+  <nav class="menu-nav" aria-label="Primary">
+    <a href="#stats" class="menu-link active" aria-current="true"><span>About</span></a>
+    <a href="#work" class="menu-link"><span>Works</span></a>
+    <a href="#pricing" class="menu-link"><span>Pricing</span></a>
+    <a href="nonprofit.html" class="menu-link"><span>Non-Profits</span></a>
+    <a href="contact.html" class="menu-link"><span>Contact</span></a>
+  </nav>
+  <div class="menu-cards">
+    <a class="menu-card" href="contact.html">
+      <span class="menu-card-title">Get a quote</span>
+      <span class="menu-card-sub">Have a website in mind?</span>
+      <span class="menu-card-body">Let's get you accurate numbers, strategic ideas — let's co-create your site, today.</span>
+    </a>
+    <a class="menu-card" href="contact.html">
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-sub">Got a big vision? Or a wild idea?</span>
+      <span class="menu-card-body">We'll get you started — or help you dream bigger.</span>
+    </a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ══════════ 1 · HERO (garcy.studio layout) ══════════ -->
+  <section class="hero-section" id="hero" aria-label="Intro">
+    <div class="hero-wrapper">
+      <div class="main-container is-hero remove-padding">
+        <div class="hero-content-wrapper">
+          <main class="page-main" id="pageMain">
+
+            <!-- looping abstract background (stands in for the hero video) -->
+            <div class="video-thumbnail" aria-hidden="true">
+              <span class="blob b1"></span>
+              <span class="blob b2"></span>
+              <span class="blob b3"></span>
+              <span class="blob b4"></span>
+            </div>
+
+            <div class="hero-content-block">
+              <div class="section-heading-block-copy">
+                <div class="section-title-block display-flex">
+                  <div class="hero-circle-and-title-wrap">
+                    <div class="section-title-block">
+                      <h1 class="section-title letter-spacing text-white desktop">Happy You.</h1>
+                    </div>
+                  </div>
+                  <div class="section-title-block">
+                    <h1 class="section-title margin-top-5px letter-spacing desktop">Happy Clients.</h1>
+                  </div>
+                </div>
+
+                <div class="section-description-block margin-top-40px make-absolute max-width-1100px">
+                  <div class="section-description-flex">
+                    <div class="section-description">Built to make you smile.</div>
+                  </div>
+                </div>
+
+                <div class="hero-cta-block">
+                  <a class="pill pill-cta" href="contact.html">Got a project?</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="video-overlay" aria-hidden="true"></div>
+
+            <div class="hero-location" data-reveal>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 18s6-5.34 6-10a6 6 0 1 0-12 0c0 4.66 6 10 6 10Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="10" cy="8" r="2.2" stroke="currentColor" stroke-width="1.4"/></svg>
+              Based in Toronto, Canada. Serving clients worldwide.
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 2 · AMBER STATEMENT ══════════ -->
+  <section class="statement" aria-label="Manifesto">
+    <h2 class="statement-h2" data-lines data-lines-scrub>
+      <span class="line-mask"><span class="line">We build websites that</span></span>
+      <span class="line-mask"><span class="line">help your business grow.</span></span>
+    </h2>
+  </section>
+
+  <!-- ══════════ 3 · HIGHLIGHT PROJECTS ══════════ -->
+  <section class="work" id="work" aria-label="Highlight projects">
+    <div class="work-pin-wrap" id="workPinWrap">
+      <div class="work-stage" id="workStage">
+        <div class="work-head">
+          <h3 class="serif-accent" data-reveal>Highlight projects</h3>
+        </div>
+
+        <div class="collage" id="collage">
+          <div class="collage-col">
+            <div class="browser-tile" data-reveal>
+              <a href="https://thepearlspatoronto.ca/" target="_blank" rel="noopener" aria-label="Spa Mania: massage, facials and nail care with booking front and centre — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">thepearlspatoronto.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Spa Mania: massage, facials and nail care with booking front and centre" src="assets/projects/pearl-spa.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Spa Mania: massage, facials and nail care with booking front and centre</span>
+                  <span class="tag">Toronto · Spa &amp; Wellness</span>
+                </div>
+              </a>
+            </div>
+            <div class="browser-tile" data-reveal>
+              <a href="https://perfectmoving.ca/" target="_blank" rel="noopener" aria-label="Perfect Moving: homes and offices moved across the GTA, free quote up front — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">perfectmoving.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Perfect Moving: homes and offices moved across the GTA, free quote up front" src="assets/projects/perfect-moving.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Perfect Moving: homes and offices moved across the GTA, free quote up front</span>
+                  <span class="tag">Toronto · Moving &amp; Storage</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="collage-col">
+            <div class="browser-tile" data-reveal>
+              <a href="https://bowld.ca/" target="_blank" rel="noopener" aria-label="BOWL'D: bold Korean rice bowls, with the menu one tap from the door — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">bowld.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="BOWL'D: bold Korean rice bowls, with the menu one tap from the door" src="assets/projects/bowld.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">BOWL'D: bold Korean rice bowls, with the menu one tap from the door</span>
+                  <span class="tag">Korean Rice Bowls</span>
+                </div>
+              </a>
+            </div>
+            <div class="browser-tile" data-reveal>
+              <a href="https://fuzen.ca/" target="_blank" rel="noopener" aria-label="Fuzen: Japanese fusion on Front St East, storefront and menu front and centre — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">fuzen.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Fuzen: Japanese fusion on Front St East, storefront and menu front and centre" src="assets/projects/fuzen.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Fuzen: Japanese fusion on Front St East, storefront and menu front and centre</span>
+                  <span class="tag">Toronto · Japanese Fusion</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="collage-col">
+            <div class="browser-tile" data-reveal>
+              <a href="https://namul.ca/" target="_blank" rel="noopener" aria-label="Namul: family-run Korean kitchen with delivery and pick-up one tap away — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">namul.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Namul: family-run Korean kitchen with delivery and pick-up one tap away" src="assets/projects/namul.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Namul: family-run Korean kitchen with delivery and pick-up one tap away</span>
+                  <span class="tag">Toronto · Korean Restaurant</span>
+                </div>
+              </a>
+            </div>
+            <div class="browser-tile" data-reveal>
+              <a href="https://sushicove.ca/" target="_blank" rel="noopener" aria-label="Sushi Cove: menu, online ordering, delivery and gift cards all one tap away — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">sushicove.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Sushi Cove: menu, online ordering, delivery and gift cards all one tap away" src="assets/projects/sushi-cove.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Sushi Cove: menu, online ordering, delivery and gift cards all one tap away</span>
+                  <span class="tag">Woodstock · Sushi</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="collage-col">
+            <div class="browser-tile" data-reveal>
+              <a href="https://szlbbq.ca/" target="_blank" rel="noopener" aria-label="Sizzle Korean BBQ: all-you-can-eat grills and 20+ banchan, made to fill tables — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">szlbbq.ca</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Sizzle Korean BBQ: all-you-can-eat grills and 20+ banchan, made to fill tables" src="assets/projects/sizzle-bbq.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Sizzle Korean BBQ: all-you-can-eat grills and 20+ banchan, made to fill tables</span>
+                  <span class="tag">Burnaby · Korean BBQ</span>
+                </div>
+              </a>
+            </div>
+            <div class="browser-tile" data-reveal>
+              <a href="https://torontorealtorkateshin.com/" target="_blank" rel="noopener" aria-label="Kate Shin Real Estate: a bilingual listings and market-news hub for GTA buyers — opens in a new tab">
+                <div class="browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><div class="browser-url">torontorealtorkateshin.com</div></div>
+                  <div class="browser-body"><img loading="lazy" alt="Kate Shin Real Estate: a bilingual listings and market-news hub for GTA buyers" src="assets/projects/kate-shin.jpg"></div>
+                </div>
+                <div class="tile-cap">
+                  <span class="t">Kate Shin Real Estate: a bilingual listings and market-news hub for GTA buyers</span>
+                  <span class="tag">Toronto · Real Estate</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-foot">
+          <a class="pill pill-ghost" href="#work" data-reveal>View our work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 4 · LOGOS WALL ══════════ -->
+  <section class="logos" aria-label="Clients">
+    <div class="wrap logos-grid">
+      <div class="logos-head">
+        <h2 class="logos-title" data-reveal>Our Clients</h2>
+        <p class="logos-label" data-reveal>We are proud to have worked with</p>
+      </div>
+      <ul class="logos-list">
+        <li data-reveal><a href="#work" title="Elboque"><img src="assets/clients/elboque.png" alt="Elboque logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="FuZen — Japanese Fusion Cuisine"><img src="assets/clients/fuzen.gif" alt="FuZen logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="StarPups — Pet Shop"><img src="assets/clients/starpups.png" alt="StarPups logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Olé — Teppanyaki Grill"><img src="assets/clients/ole-teppanyaki.png" alt="Olé logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="K-Butcher — Meat Boutique"><img src="assets/clients/k-butcher.png" alt="K-Butcher logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="La Fo"><img src="assets/clients/lafo.webp" alt="La Fo logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Lecécé — Fleur and Garden"><img src="assets/clients/lecece.png" alt="Lecécé logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="SZL BBQ — AYCE Korean BBQ"><img src="assets/clients/szl-bbq.png" alt="SZL BBQ logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Bowl'd"><img src="assets/clients/bowld.png" alt="Bowl'd logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Namul — Korean Food"><img src="assets/clients/namul.webp" alt="Namul logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Arisu — Home Party"><img src="assets/clients/arisu-home-party.png" alt="Arisu Home Party logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Perfect Moving"><img src="assets/clients/perfect-moving.png" alt="Perfect Moving logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="CJH Cleaning Management"><img src="assets/clients/cjh-cleaning.png" alt="CJH Cleaning Management logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Sushi Cove"><img src="assets/clients/sushi-cove.png" alt="Sushi Cove logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="The Pearl Spa — Wellness and Beauty Spa"><img src="assets/clients/the-pearl-spa.png" alt="The Pearl Spa logo" loading="lazy"></a></li>
+        <li data-reveal><a href="#work" title="Seoul Beauty"><img src="assets/clients/seoul-beauty.png" alt="Seoul Beauty logo" loading="lazy"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════ 5 · PRICING ═══════-->
+  <section class="pricing" id="pricing" aria-label="Pricing">
+    <div class="wrap">
+      <div class="pricing-head">
+        <p class="pricing-eyebrow" data-reveal>Pricing</p>
+        <h2 class="pricing-title" data-reveal>Simple, transparent pricing for every stage</h2>
+        <p class="pricing-sub" data-reveal>No hidden fees, no upfront costs — just clear pricing for the website your business needs.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <article class="pricing-card" data-reveal>
+          <div class="pricing-price">
+            <span class="pricing-amount">$399</span>
+          </div>
+          <h3 class="pricing-plan">One-Page Website</h3>
+          <p class="pricing-desc">Perfect for landing pages and simple business sites</p>
+
+          <div class="pricing-highlight">
+            <strong>No Upfront Cost</strong>
+            <span>Start immediately with zero setup fees</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom One-Page Design</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile-Responsive Design</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SSL Certificate &amp; Security</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>24/7 Technical Support</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Performance Optimization</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO-Ready Structure</li>
+          </ul>
+
+          <a href="contact.html" class="pill pill-dark pill-block">Get Started</a>
+        </article>
+
+        <article class="pricing-card pricing-card-featured" data-reveal>
+          <span class="pricing-badge">Most Popular</span>
+          <div class="pricing-price">
+            <span class="pricing-amount">$699</span>
+          </div>
+          <h3 class="pricing-plan">Multi-Page Website</h3>
+          <p class="pricing-desc">2 to 7 pages for growing businesses</p>
+
+          <div class="pricing-highlight">
+            <strong>No Upfront Cost</strong>
+            <span>Start immediately with zero setup fees</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>2-7 Custom Pages</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced Navigation Menu</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Contact Forms &amp; Integration</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ongoing Maintenance &amp; Updates</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>24/7 Technical Support</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile-Responsive Design</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SSL Certificate &amp; Security</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Performance Optimization</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO-Ready Structure</li>
+          </ul>
+
+          <a href="contact.html" class="pill pill-block">Start Your Project</a>
+        </article>
+
+        <article class="pricing-card pricing-card-custom" data-reveal>
+          <div class="pricing-price">
+            <span class="pricing-amount">Custom</span>
+            <span class="pricing-price-suffix">Quote</span>
+          </div>
+          <h3 class="pricing-plan">Web &amp; App Solutions</h3>
+          <p class="pricing-desc">Tailored solutions for complex requirements</p>
+
+          <div class="pricing-highlight">
+            <strong>Custom Pricing</strong>
+            <span>Based on your specific needs</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom Web Applications</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile App Development</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>E-commerce Solutions</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Database Integration</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>API Development</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced Functionality</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Scalable Architecture</li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ongoing Support &amp; Maintenance</li>
+          </ul>
+
+          <a href="contact.html" class="pill pill-outline-dark pill-block">Contact for Quote</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 6 · STATS ══════════ -->
+  <section class="stats" id="stats" aria-label="By the numbers">
+    <div class="wrap">
+      <div class="stats-head">
+        <h3 class="serif-accent" data-reveal>The numbers behind the work</h3>
+        <a class="pill pill-dark" href="contact.html" data-reveal>Get to know us</a>
+      </div>
+      <ul class="stats-list">
+        <li class="stat-row" data-reveal>
+          <span class="stat-num" data-count="60" data-suffix="+">60</span>
+          <span class="stat-label">Projects Delivered</span>
+          <span class="stat-quip">Custom websites built for businesses ready to grow online.</span>
+        </li>
+        <li class="stat-row" data-reveal>
+          <span class="stat-num">2022</span>
+          <span class="stat-label">Founded</span>
+          <span class="stat-quip">Toronto-based, serving clients around the world.</span>
+        </li>
+        <li class="stat-row" data-reveal>
+          <span class="stat-num" data-count="10" data-suffix="+">10</span>
+          <span class="stat-label">Free Non-Profit Websites</span>
+          <span class="stat-quip">Community giving in action — free websites built through volunteer work.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ══════════ 7 · FOOTER ══════════ -->
+<footer class="footer" aria-label="Footer">
+  <div class="wrap footer-top">
+    <span class="badge badge-lg" aria-hidden="true">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs><path id="fbadge" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"></path></defs>
+        <text><textPath href="#fbadge">CALGARY WEB AGENCY · SIMPLEWEBS · </textPath></text>
+      </svg>
+      <span class="badge-center">S</span>
+    </span>
+    <a class="pill pill-cta" href="contact.html" data-reveal>Let's Get To Work</a>
+  </div>
+
+  <div class="wrap footer-cols">
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="#work">Websites <span aria-hidden="true">&rarr;</span></a>
+      <p>Custom-built sites that turn visitors into customers, designed and developed in-house.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="nonprofit.html">Non-Profits <span aria-hidden="true">&rarr;</span></a>
+      <p>Affordable, mission-driven websites built for non-profits and community organizations.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="#pricing">Pricing <span aria-hidden="true">&rarr;</span></a>
+      <p>Transparent rates with zero upfront cost, from one-page sites to custom builds.</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-legal">
+    <a href="mailto:info@simplewebsdesign.com">info@simplewebsdesign.com</a>
+    <span class="footer-copy">© <span id="year">2026</span> SimpleWebs</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

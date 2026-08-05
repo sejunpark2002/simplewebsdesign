@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#2a1d16"/><stop offset="1" stop-color="#d99a4e" stop-opacity=".35"/>
+</linearGradient>
+<linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#2a1d16" stop-opacity="0"/><stop offset="1" stop-color="#2a1d16" stop-opacity=".9"/>
+</linearGradient>
+<clipPath id="frame"><rect width="1600" height="1000"/></clipPath>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<g clip-path="url(#frame)">
+<circle cx="460" cy="262" r="379" fill="#d99a4e" opacity="0.10"/>
+<circle cx="1489" cy="458" r="322" fill="#f3e8dd" opacity="0.10"/>
+<circle cx="1171" cy="795" r="334" fill="#d99a4e" opacity="0.10"/>
+<rect x="96" y="74" width="150" height="26" rx="6" fill="#f3e8dd" opacity="0.9"/>
+<rect x="560" y="80" width="78" height="14" rx="7" fill="#f3e8dd" opacity="0.45"/>
+<rect x="690" y="80" width="96" height="14" rx="7" fill="#f3e8dd" opacity="0.45"/>
+<rect x="820" y="80" width="66" height="14" rx="7" fill="#f3e8dd" opacity="0.45"/>
+<rect x="950" y="80" width="84" height="14" rx="7" fill="#f3e8dd" opacity="0.45"/>
+<rect x="1330" y="68" width="174" height="40" rx="20" fill="#d99a4e" opacity="1"/>
+<rect x="96" y="220" width="900" height="74" rx="8" fill="#f3e8dd" opacity="0.92"/>
+<rect x="96" y="316" width="640" height="74" rx="8" fill="#f3e8dd" opacity="0.92"/>
+<rect x="96" y="450" width="660" height="450" rx="20" fill="#f3e8dd" opacity="0.15"/>
+<rect x="796" y="450" width="330" height="215" rx="20" fill="#d99a4e" opacity="0.45"/>
+<rect x="796" y="685" width="330" height="215" rx="20" fill="#f3e8dd" opacity="0.13"/>
+<rect x="1166" y="450" width="338" height="450" rx="20" fill="#f3e8dd" opacity="0.20"/>
+<rect width="1600" height="1000" fill="url(#v)" opacity=".35"/>
+<text x="96" y="942" font-family="Inter Tight, Helvetica Neue, Arial, sans-serif" font-size="46" font-weight="600" letter-spacing="-1.5" fill="#f3e8dd" opacity=".95">Two Crows Coffee</text>
+</g></svg>

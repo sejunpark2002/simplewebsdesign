@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — SimpleWebs</title>
+<meta name="description" content="Tell SimpleWebs about your project — we reply within one business day. Reach us by form, email or KakaoTalk.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════ LOADER ══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader-word">SimpleWebs</span>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="wordmark" href="index.html" aria-label="SimpleWebs home">SimpleWebs</a>
+  <nav class="nav-menu" aria-label="Primary">
+    <a href="index.html#stats" class="nav-link">About</a>
+    <a href="index.html#work" class="nav-link">Works</a>
+    <a href="index.html#pricing" class="nav-link">Pricing</a>
+    <a href="nonprofit.html" class="nav-link">Non-Profits</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button class="pill pill-menu" id="menuBtn" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <svg class="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════ FULLSCREEN MENU OVERLAY ══════════ -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Main menu" hidden>
+  <button class="pill pill-close" id="menuClose" aria-label="Close menu">
+    <svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+    </svg>
+  </button>
+  <nav class="menu-nav" aria-label="Primary">
+    <a href="index.html#stats" class="menu-link"><span>About</span></a>
+    <a href="index.html#work" class="menu-link"><span>Works</span></a>
+    <a href="index.html#pricing" class="menu-link"><span>Pricing</span></a>
+    <a href="nonprofit.html" class="menu-link"><span>Non-Profits</span></a>
+    <a href="contact.html" class="menu-link active" aria-current="true"><span>Contact</span></a>
+  </nav>
+  <div class="menu-cards">
+    <a class="menu-card" href="mailto:info@simplewebsdesign.com">
+      <span class="menu-card-title">Email us</span>
+      <span class="menu-card-sub">info@simplewebsdesign.com</span>
+      <span class="menu-card-body">Prefer email? Send your project details straight to our inbox.</span>
+    </a>
+    <a class="menu-card" href="https://open.kakao.com/o/sGN3GFHe" target="_blank" rel="noopener">
+      <span class="menu-card-title">KakaoTalk</span>
+      <span class="menu-card-sub">Chat with us directly</span>
+      <span class="menu-card-body">Open the chat room and message us any time.</span>
+    </a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ══════════ 1 · CONTACT HERO ══════════ -->
+  <section class="page-hero" aria-label="Contact SimpleWebs">
+    <div class="wrap">
+      <p class="page-hero-eyebrow" data-reveal>Contact</p>
+      <h1 class="page-hero-title" data-reveal>Let's build something great.</h1>
+      <p class="page-hero-sub" data-reveal>Tell us about your project below and we'll get back to you within one business day.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 2 · CONTACT FORM ══════════ -->
+  <section class="contact-section" aria-label="Get in touch">
+    <div class="wrap contact-grid">
+      <form class="contact-form" id="contactForm" action="/api/contact" method="POST">
+        <div class="form-field">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="cf-detail">Project Detail</label>
+          <textarea id="cf-detail" name="message" rows="6" placeholder="Tell us a bit about what you're looking to build…" required></textarea>
+        </div>
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="pill pill-cta form-submit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-info">
+        <div class="contact-info-block" data-reveal>
+          <span class="contact-info-h">Email</span>
+          <a class="contact-info-link" href="mailto:info@simplewebsdesign.com">info@simplewebsdesign.com</a>
+        </div>
+        <div class="contact-info-block" data-reveal>
+          <span class="contact-info-h">KakaoTalk</span>
+          <a class="kakao-btn" href="https://open.kakao.com/o/sGN3GFHe" target="_blank" rel="noopener" aria-label="Chat with SimpleWebs on KakaoTalk — opens in a new tab">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5C6.7 3.5 2.5 6.94 2.5 11.2c0 2.77 1.83 5.2 4.6 6.57-.18.87-.66 2.57-.75 2.97-.12.5.18.5.38.36.16-.1 2.49-1.72 3.5-2.43.55.08 1.12.12 1.77.12 5.3 0 9.5-3.44 9.5-7.6S17.3 3.5 12 3.5Z"/></svg>
+            Chat on KakaoTalk
+          </a>
+        </div>
+        <div class="contact-info-block" data-reveal>
+          <span class="contact-info-h">Response Time</span>
+          <p>We typically reply within one business day.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer" aria-label="Footer">
+  <div class="wrap footer-top">
+    <span class="badge badge-lg" aria-hidden="true">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs><path id="fbadge" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"></path></defs>
+        <text><textPath href="#fbadge">CALGARY WEB AGENCY · SIMPLEWEBS · </textPath></text>
+      </svg>
+      <span class="badge-center">S</span>
+    </span>
+    <a class="pill pill-cta" href="mailto:info@simplewebsdesign.com" data-reveal>Let's Get To Work</a>
+  </div>
+
+  <div class="wrap footer-cols">
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="index.html#work">Websites <span aria-hidden="true">&rarr;</span></a>
+      <p>Custom-built sites that turn visitors into customers, designed and developed in-house.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="nonprofit.html">Non-Profits <span aria-hidden="true">&rarr;</span></a>
+      <p>Affordable, mission-driven websites built for non-profits and community organizations.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="index.html#pricing">Pricing <span aria-hidden="true">&rarr;</span></a>
+      <p>Transparent rates with zero upfront cost, from one-page sites to custom builds.</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-legal">
+    <a href="mailto:info@simplewebsdesign.com">info@simplewebsdesign.com</a>
+    <span class="footer-copy">© <span id="year">2026</span> SimpleWebs</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

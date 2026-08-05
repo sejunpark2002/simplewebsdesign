@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#eef6f6"/><stop offset="1" stop-color="#2fa6a0" stop-opacity=".35"/>
+</linearGradient>
+<linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#eef6f6" stop-opacity="0"/><stop offset="1" stop-color="#eef6f6" stop-opacity=".9"/>
+</linearGradient>
+<clipPath id="frame"><rect width="1600" height="1000"/></clipPath>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<g clip-path="url(#frame)">
+<circle cx="990" cy="779" r="509" fill="#2fa6a0" opacity="0.10"/>
+<circle cx="1412" cy="828" r="499" fill="#12333a" opacity="0.10"/>
+<circle cx="428" cy="795" r="581" fill="#2fa6a0" opacity="0.10"/>
+<rect x="96" y="74" width="150" height="26" rx="6" fill="#12333a" opacity="0.9"/>
+<rect x="560" y="80" width="78" height="14" rx="7" fill="#12333a" opacity="0.45"/>
+<rect x="690" y="80" width="96" height="14" rx="7" fill="#12333a" opacity="0.45"/>
+<rect x="820" y="80" width="66" height="14" rx="7" fill="#12333a" opacity="0.45"/>
+<rect x="950" y="80" width="84" height="14" rx="7" fill="#12333a" opacity="0.45"/>
+<rect x="1330" y="68" width="174" height="40" rx="20" fill="#2fa6a0" opacity="1"/>
+<rect x="430" y="250" width="740" height="62" rx="8" fill="#12333a" opacity="0.92"/>
+<rect x="520" y="336" width="560" height="62" rx="8" fill="#12333a" opacity="0.92"/>
+<rect x="600" y="452" width="400" height="18" rx="9" fill="#12333a" opacity="0.45"/>
+<rect x="660" y="490" width="280" height="18" rx="9" fill="#12333a" opacity="0.32"/>
+<rect x="690" y="566" width="220" height="52" rx="26" fill="#2fa6a0" opacity="1"/>
+<rect x="192" y="720" width="372" height="200" rx="18" fill="#12333a" opacity="0.14"/>
+<rect x="604" y="720" width="372" height="200" rx="18" fill="#12333a" opacity="0.14"/>
+<rect x="1016" y="720" width="372" height="200" rx="18" fill="#12333a" opacity="0.14"/>
+<rect width="1600" height="1000" fill="url(#v)" opacity=".35"/>
+<text x="96" y="942" font-family="Inter Tight, Helvetica Neue, Arial, sans-serif" font-size="46" font-weight="600" letter-spacing="-1.5" fill="#12333a" opacity=".95">Northside Dental</text>
+</g></svg>
