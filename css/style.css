@@ -580,7 +580,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   align-items: start;
 }
 .logos-head { position: sticky; top: clamp(24px, 10vh, 80px); }
-.logos-title {
+.logos-title, .work-title {
   font-size: clamp(32px, 4.4vw, 56px);
   font-weight: 500;
   letter-spacing: -.02em;
