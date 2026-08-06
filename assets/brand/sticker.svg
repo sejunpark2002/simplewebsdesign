@@ -6,7 +6,7 @@
 <circle cx="72.5" cy="72.5" r="46.5" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="1"/>
 <text font-family="'Plus Jakarta Sans','Inter Tight',sans-serif" font-size="9.6" font-weight="600"
       letter-spacing="1.6" fill="#ffffff">
-  <textPath href="#ring" startOffset="0">SIMPLEWEBS · CALGARY · ALBERTA · EST 2026 · </textPath>
+  <textPath href="#ring" startOffset="0">SIMPLEWEBS · TORONTO · ONTARIO · EST 2026 · </textPath>
 </text>
 <g fill="#ffffff">
   <path d="M72.5 52.5 v40 M52.5 72.5 h40" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
