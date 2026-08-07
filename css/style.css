@@ -500,7 +500,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: clamp(14px, 1.6vw, 26px);
   padding: 0 var(--gutter);
   align-items: center;
@@ -517,6 +517,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .collage-col:nth-child(3) { margin-top: 2vh; }
 .collage-col:nth-child(4) { margin-top: -12vh; }
 .collage-col:nth-child(5) { margin-top: 4vh; }
+.collage-col:nth-child(6) { margin-top: -6vh; }
 
 .browser {
   border-radius: var(--r-sm);
