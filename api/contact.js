@@ -58,7 +58,7 @@ module.exports = async function handler(req, res) {
     return res.status(status).setHeader("Content-Type", "text/html; charset=utf-8")
       .send('<!doctype html><meta charset="utf-8"><title>SimpleWebs</title>' +
         '<p style="font:16px/1.5 system-ui;padding:40px">' + escapeHtml(msg) +
-        ' <a href="/contact.html">Back to the site</a></p>');
+        ' <a href="/contact">Back to the site</a></p>');
   };
 
   // honeypot: bots fill hidden fields, so accept and drop it
