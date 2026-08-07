@@ -225,13 +225,13 @@
     });
   }
 
-  /* 3 · WORK — four collage columns drift at different speeds */
+  /* 3 · WORK — five collage columns drift at different speeds */
   function workScrub() {
     var wrap = $("#workPinWrap");
     if (!wrap) return;
     var cols = $$(".collage-col");
     var imgs = $$(".browser-tile img");
-    var travel = [[100, -200], [180, -320], [140, -260], [220, -380]];
+    var travel = [[100, -200], [180, -320], [140, -260], [220, -380], [160, -290]];
 
     scrubs.push(function () {
       var p = pinProgress(wrap);
