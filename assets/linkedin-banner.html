@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SimpleWebs — LinkedIn Banner</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1584px; height: 396px; overflow: hidden; }
+
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background-color: #eef2f7;
+    background-image:
+      /* soft white core glow */
+      radial-gradient(120% 150% at 52% 38%, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.55) 32%, rgba(255,255,255,0) 62%),
+      /* cyan wash, bottom-left */
+      radial-gradient(88% 125% at -6% 112%, #4dbde3 0%, #85d0e8 24%, rgba(174,218,238,0.7) 48%, rgba(255,255,255,0) 76%),
+      /* lavender wash, bottom-center/right */
+      radial-gradient(88% 118% at 56% 122%, #aca4ef 0%, #c2bcf5 28%, rgba(206,202,246,0.6) 54%, rgba(255,255,255,0) 80%),
+      /* cool blue-grey top edges */
+      radial-gradient(100% 90% at 100% 0%, #dbe4f2 0%, rgba(232,238,247,0.4) 45%, rgba(255,255,255,0) 75%),
+      radial-gradient(90% 90% at 0% 0%, #e2e8f2 0%, rgba(238,242,248,0.4) 45%, rgba(255,255,255,0) 72%),
+      linear-gradient(180deg, #f4f8fc 0%, #eef3f9 55%, #dfe3f3 100%);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* main lockup */
+  .lockup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .wordmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F4F457;
+    flex: none;
+    margin-top: 6px;
+  }
+
+  .name {
+    font-size: 104px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: #101114;
+    line-height: 1;
+  }
+
+  .tagline {
+    margin-top: 22px;
+    font-size: 31px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: #565e6c;
+  }
+
+  /* salesforce mark, top-right corner */
+  .sf {
+    position: absolute;
+    top: 40px;
+    right: 46px;
+    width: 128px;
+    height: auto;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="lockup">
+      <div class="wordmark">
+        <span class="dot"></span>
+        <span class="name">SimpleWebs</span>
+      </div>
+      <div class="tagline">Website Design &amp; Development</div>
+    </div>
+    <img class="sf" src="salesforce-logo.png" alt="Salesforce">
+  </div>
+</body>
+</html>
