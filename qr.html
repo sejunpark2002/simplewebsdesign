@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free QR Code Generator — SimpleWebs</title>
+<meta name="description" content="Make a free, high-resolution QR code for any link or text. Pick your colours and error correction, then download a PNG or SVG. No sign-up, no tracking, no expiry.">
+<link rel="canonical" href="https://simplewebsdesign.com/qr">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- ── Social share (Kakao / Threads / Slack / iMessage) ── -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SimpleWebs">
+<meta property="og:locale" content="en_CA">
+<meta property="og:url" content="https://simplewebsdesign.com/qr">
+<meta property="og:title" content="Free QR Code Generator — SimpleWebs">
+<meta property="og:description" content="Make a free, high-resolution QR code for any link or text. Pick your colours and error correction, then download a PNG or SVG.">
+<meta property="og:image" content="https://simplewebsdesign.com/assets/og-image.png">
+<meta property="og:image:secure_url" content="https://simplewebsdesign.com/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SimpleWebs — Website Design &amp; Development">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free QR Code Generator — SimpleWebs">
+<meta name="twitter:description" content="Make a free, high-resolution QR code for any link or text. Pick your colours and error correction, then download a PNG or SVG.">
+<meta name="twitter:image" content="https://simplewebsdesign.com/assets/og-image.png">
+<meta name="theme-color" content="#1e1e1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════ LOADER ══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader-word">SimpleWebs</span>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="wordmark" href="/" aria-label="SimpleWebs home">SimpleWebs</a>
+  <nav class="nav-menu" aria-label="Primary">
+    <a href="/#stats" class="nav-link">About</a>
+    <a href="/#work" class="nav-link">Works</a>
+    <a href="/#pricing" class="nav-link">Pricing</a>
+    <a href="/nonprofit" class="nav-link">Non-Profits</a>
+    <a href="/contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button class="pill pill-menu" id="menuBtn" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <svg class="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════ FULLSCREEN MENU OVERLAY ══════════ -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Main menu" hidden>
+  <button class="pill pill-close" id="menuClose" aria-label="Close menu">
+    <svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+    </svg>
+  </button>
+  <nav class="menu-nav" aria-label="Primary">
+    <a href="/#stats" class="menu-link"><span>About</span></a>
+    <a href="/#work" class="menu-link"><span>Works</span></a>
+    <a href="/#pricing" class="menu-link"><span>Pricing</span></a>
+    <a href="/nonprofit" class="menu-link"><span>Non-Profits</span></a>
+    <a href="/contact" class="menu-link"><span>Contact</span></a>
+    <a href="/qr" class="menu-link active" aria-current="true"><span>QR Generator</span></a>
+  </nav>
+  <div class="menu-cards">
+    <a class="menu-card" href="mailto:info@simplewebsdesign.com">
+      <span class="menu-card-title">Email us</span>
+      <span class="menu-card-sub">info@simplewebsdesign.com</span>
+      <span class="menu-card-body">Prefer email? Send your project details straight to our inbox.</span>
+    </a>
+    <a class="menu-card" href="https://open.kakao.com/o/sGN3GFHe" target="_blank" rel="noopener">
+      <span class="menu-card-title">KakaoTalk</span>
+      <span class="menu-card-sub">Chat with us directly</span>
+      <span class="menu-card-body">Open the chat room and message us any time.</span>
+    </a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ══════════ 1 · HERO ══════════ -->
+  <section class="page-hero" aria-label="QR code generator">
+    <div class="wrap">
+      <p class="page-hero-eyebrow" data-reveal>Free tool</p>
+      <h1 class="page-hero-title" data-reveal>QR code generator.</h1>
+      <p class="page-hero-sub" data-reveal>Point it at a link, a menu, a phone number — anything you can write as text. Download a print-ready PNG or a razor-sharp SVG. Free, no sign-up, and the code never expires.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 2 · GENERATOR ══════════ -->
+  <section class="qr-section" aria-label="Generate a QR code">
+    <div class="wrap qr-grid">
+
+      <form class="qr-form" id="qrForm" novalidate>
+        <div class="form-field">
+          <label for="qrContent">Link or text</label>
+          <textarea id="qrContent" name="content" rows="3" spellcheck="false"
+                    placeholder="https://simplewebsdesign.com">https://simplewebsdesign.com</textarea>
+        </div>
+
+        <div class="qr-options">
+          <div class="form-field">
+            <label for="qrEcc">Error correction</label>
+            <select id="qrEcc" name="ecc">
+              <option value="L">L — 7% recoverable</option>
+              <option value="M" selected>M — 15% (recommended)</option>
+              <option value="Q">Q — 25%</option>
+              <option value="H">H — 30% (print &amp; stickers)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="qrSize">Image size</label>
+            <select id="qrSize" name="size">
+              <option value="256">Small — about 256px</option>
+              <option value="512" selected>Medium — about 512px</option>
+              <option value="1024">Large — about 1024px</option>
+              <option value="2048">Print — about 2048px</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="qr-options">
+          <div class="form-field">
+            <label for="qrDark">Code colour</label>
+            <div class="qr-color">
+              <input type="color" id="qrDark" name="dark" value="#1e1e1e">
+              <span class="qr-color-hint">Dark modules</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="qrLight">Background</label>
+            <div class="qr-color">
+              <input type="color" id="qrLight" name="light" value="#ffffff">
+              <label class="qr-check" for="qrTransparent">
+                <input type="checkbox" id="qrTransparent" name="transparent">
+                <span>Transparent</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-actions">
+          <button type="button" class="pill pill-cta" id="qrPng">Download PNG</button>
+          <button type="button" class="pill qr-btn-alt" id="qrSvg">Download SVG</button>
+        </div>
+
+        <p class="qr-note" id="qrNote" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="qr-preview" aria-label="Preview">
+        <div class="qr-canvas-wrap">
+          <canvas id="qrCanvas" role="img" aria-label="QR code preview"></canvas>
+        </div>
+        <p class="qr-meta" id="qrMeta"></p>
+        <p class="qr-privacy">Everything is generated in your browser — nothing you type is uploaded.</p>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ══════════ 3 · TIPS ══════════ -->
+  <section class="qr-tips" aria-label="Tips for QR codes that scan">
+    <div class="wrap">
+      <h2 class="qr-tips-h" data-reveal>Getting a code that actually scans</h2>
+      <div class="qr-tips-grid">
+        <div class="qr-tip" data-reveal>
+          <span class="qr-tip-n">01</span>
+          <h3>Print it big enough</h3>
+          <p>Roughly 2cm across for a table card, and 10× that for a poster read from across the room. Bigger beats clever every time.</p>
+        </div>
+        <div class="qr-tip" data-reveal>
+          <span class="qr-tip-n">02</span>
+          <h3>Keep the quiet zone</h3>
+          <p>The white margin around the code is part of the code. We add it for you — don't crop it off in your layout.</p>
+        </div>
+        <div class="qr-tip" data-reveal>
+          <span class="qr-tip-n">03</span>
+          <h3>Use high correction on print</h3>
+          <p>Level H keeps the code readable after a scuff, a fold or a bit of ink spread. Level M is plenty for screens.</p>
+        </div>
+        <div class="qr-tip" data-reveal>
+          <span class="qr-tip-n">04</span>
+          <h3>Shorter links, smaller grid</h3>
+          <p>A short URL means fewer modules, which means a chunkier, more forgiving code. Point it at a tidy page on your own domain.</p>
+        </div>
+      </div>
+      <a class="pill pill-cta qr-tips-cta" href="/contact" data-reveal>Need the page behind the code?</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer" aria-label="Footer">
+  <div class="wrap footer-top">
+    <span class="badge badge-lg" aria-hidden="true">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs><path id="fbadge" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"></path></defs>
+        <text><textPath href="#fbadge" textLength="238.76" lengthAdjust="spacing">TORONTO WEB AGENCY · SIMPLEWEBS · </textPath></text>
+      </svg>
+      <span class="badge-center">S</span>
+    </span>
+    <a class="pill pill-cta" href="mailto:info@simplewebsdesign.com" data-reveal>Let's Get To Work</a>
+  </div>
+
+  <div class="wrap footer-cols">
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="/#work">Websites <span aria-hidden="true">&rarr;</span></a>
+      <p>Custom-built sites that turn visitors into customers, designed and developed in-house.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="/nonprofit">Non-Profits <span aria-hidden="true">&rarr;</span></a>
+      <p>Affordable, mission-driven websites built for non-profits and community organizations.</p>
+    </div>
+    <div class="footer-col-block" data-reveal>
+      <a class="arrow-link arrow-link-light" href="/#pricing">Pricing <span aria-hidden="true">&rarr;</span></a>
+      <p>Transparent rates with zero upfront cost, from one-page sites to custom builds.</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-legal">
+    <a href="mailto:info@simplewebsdesign.com">info@simplewebsdesign.com</a>
+    <span class="footer-copy">© <span id="year">2026</span> SimpleWebs</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/qr.js"></script>
+</body>
+</html>
