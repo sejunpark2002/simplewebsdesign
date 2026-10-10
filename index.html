@@ -29,6 +29,53 @@
 <meta name="twitter:image" content="https://simplewebsdesign.com/assets/og-image.png">
 <meta name="theme-color" content="#1e1e1e">
 
+<!-- ── Structured data (helps Google show site name + sitelinks) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://simplewebsdesign.com/#website",
+      "url": "https://simplewebsdesign.com/",
+      "name": "SimpleWebs",
+      "alternateName": "SimpleWebs Design",
+      "inLanguage": "en-CA",
+      "publisher": { "@id": "https://simplewebsdesign.com/#org" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://simplewebsdesign.com/#org",
+      "name": "SimpleWebs",
+      "url": "https://simplewebsdesign.com/",
+      "logo": "https://simplewebsdesign.com/assets/apple-touch-icon.png",
+      "image": "https://simplewebsdesign.com/assets/og-image.png",
+      "email": "info@simplewebsdesign.com",
+      "description": "SimpleWebs is a Toronto web agency crafting websites, storefronts and brands for businesses ready to grow.",
+      "areaServed": "Toronto, Ontario, Canada"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Free Websites for Non-Profits",
+      "description": "We design and build full websites for free for non-profits and community organizations.",
+      "url": "https://simplewebsdesign.com/nonprofit"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Contact",
+      "description": "Tell us about your project — we reply within one business day.",
+      "url": "https://simplewebsdesign.com/contact"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Free QR Code Generator",
+      "description": "Make a free, high-resolution QR code for any link. Download PNG or SVG.",
+      "url": "https://simplewebsdesign.com/qr"
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
